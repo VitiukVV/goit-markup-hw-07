@@ -37,7 +37,6 @@ body {
   color: var(--primary-color);
 }
 .paragraph {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -78,8 +77,6 @@ body {
   font-style: normal;
 }
 .contacts {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -164,7 +161,6 @@ body {
   color: #f4f4fd;
 }
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
