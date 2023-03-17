@@ -23,173 +23,200 @@
   <body>
     <!-- Header -------------------------------->
     <header class="page-header">
-      <nav class="page-nav">
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-web">Studio</span></a
-        >
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="main-address">
-        <ul class="list">
-          <li>
-            <a class="contacts link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contacts link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container main-nav">
+        <nav class="page-nav">
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo-web">Studio</span></a
+          >
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="main-address">
+          <ul class="address-list list">
+            <li class="menu-item">
+              <a class="contacts link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="contacts link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 hidden>Portfolio</h1>
-        <ul class="list">
-          <li><button class="portfolio-button" type="button">All</button></li>
-          <li>
-            <button class="portfolio-button" type="button">Web Site</button>
-          </li>
-          <li><button class="portfolio-button" type="button">App</button></li>
-          <li>
-            <button class="portfolio-button" type="button">Design</button>
-          </li>
-          <li>
-            <button class="portfolio-button" type="button">Marketing</button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/bank-app-interface.jpg"
-                alt="mobile banking app interface"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Banking App Interface Concept</h2>
-              <p class="paragraph">App</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/cashless.jpg"
-                alt="cashless payment by phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Cashless Payment</h2>
-              <p class="paragraph">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/meditation-app.jpg"
-                alt="the concept of a meditation app on a laptop and phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Meditation App</h2>
-              <p class="paragraph">App</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/taxi-service.jpg"
-                alt="a business class taxi with a phone with an application and a route fixed on the holder"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Taxi Service</h2>
-              <p class="paragraph">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/phone-screen.jpg"
-                alt="variations of the month's illustrations on the phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Screen Illustrations</h2>
-              <p class="paragraph">Design</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/online-course.jpg"
-                alt="a young beautiful girl studies online courses from her phone "
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Online Courses</h2>
-              <p class="paragraph">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/instagram-concept.jpg"
-                alt="Instagram story concept with captions and photos of a beautiful girl"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Instagram Stories Concept</h2>
-              <p class="paragraph">Design</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/organic-food.jpg"
-                alt="A woman carries fruits and vegetables in a bag"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Organic Food</h2>
-              <p class="paragraph">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link"
-              ><img
-                src="./images/portfolio/coffee.jpg"
-                alt="barista drew beautiful art on coffee with milk foam"
-                width="360"
-                height="300"
-              />
-              <h2 class="title">Fresh Coffee</h2>
-              <p class="paragraph">Web Site</p></a
-            >
-          </li>
-        </ul>
+      <section class="section-portfolio">
+        <div class="container">
+          <h1 hidden>Portfolio</h1>
+          <ul class="portfolio-list list">
+            <li class="portfolio-list-item">
+              <button class="portfolio-button" type="button">All</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-button" type="button">Web Site</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-button" type="button">App</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-button" type="button">Design</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="card-set list">
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/bank-app-interface.jpg"
+                  alt="mobile banking app interface"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Banking App Interface Concept</h2>
+                <p class="card-paragraph paragraph">App</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/cashless.jpg"
+                  alt="cashless payment by phone"
+                  width="360"
+                  height="300"
+              /></a>
+              <div class="card-content">
+                <h2 class="card-title title">Cashless Payment</h2>
+                <p class="card-paragraph paragraph">Marketing</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/meditation-app.jpg"
+                  alt="the concept of a meditation app on a laptop and phone"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Meditation App</h2>
+                <p class="card-paragraph paragraph">App</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/taxi-service.jpg"
+                  alt="a business class taxi with a phone with an application and a route fixed on the holder"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Taxi Service</h2>
+                <p class="card-paragraph paragraph">Marketing</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/phone-screen.jpg"
+                  alt="variations of the month's illustrations on the phone"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Screen Illustrations</h2>
+                <p class="card-paragraph paragraph">Design</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/online-course.jpg"
+                  alt="a young beautiful girl studies online courses from her phone "
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Online Courses</h2>
+                <p class="card-paragraph paragraph">Marketing</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/instagram-concept.jpg"
+                  alt="Instagram story concept with captions and photos of a beautiful girl"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Instagram Stories Concept</h2>
+                <p class="card-paragraph paragraph">Design</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/organic-food.jpg"
+                  alt="A woman carries fruits and vegetables in a bag"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Organic Food</h2>
+                <p class="card-paragraph paragraph">Web Site</p>
+              </div>
+            </li>
+            <li class="card-item">
+              <a href="" class="link"
+                ><img
+                  src="./images/portfolio/coffee.jpg"
+                  alt="barista drew beautiful art on coffee with milk foam"
+                  width="360"
+                  height="300"
+                />
+              </a>
+              <div class="card-content">
+                <h2 class="card-title title">Fresh Coffee</h2>
+                <p class="card-paragraph paragraph">Web Site</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="footer-logo link" href="./index.html"
-        >Web<span class="footer-logo-web">Studio</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="footer-logo link" href="./index.html"
+          >Web<span class="footer-logo-web">Studio</span></a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
