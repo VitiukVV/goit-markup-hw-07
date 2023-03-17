@@ -149,10 +149,14 @@ ul {
   text-align: center;
 }
 
+.hero-container {
+  padding: 188px 0;
+}
 .hero-title {
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
