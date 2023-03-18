@@ -175,6 +175,7 @@ ul {
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
 }
 
@@ -186,8 +187,7 @@ ul {
 /* ===================== /HERO ===================== */
 /* ===================== Section 2 our qualities */
 .section-qualities {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .qualities-list {
   display: flex;
@@ -204,8 +204,8 @@ ul {
 
 /* ===================== /Section 2 our qualities =================== */
 /* ===================== Section 3 what are we doing ================*/
-.work-container {
-  margin-bottom: 120px;
+.section-work {
+  padding-bottom: 120px;
 }
 .work-list {
   display: flex;
@@ -219,6 +219,7 @@ ul {
 /* ===================== /Section 3 what are we doing =============== */
 /* ===================== team section ===================== */
 .section-team {
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 .team-list {
@@ -226,12 +227,10 @@ ul {
 }
 
 .team-title {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .team-item {
-  margin-bottom: 120px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -254,9 +253,9 @@ ul {
 /* ===================== footer ===================== */
 .footer {
   background-color: var(--primary-color);
+  padding: 100px 0;
 }
 .footer-logo {
-  padding-top: 100px;
   padding-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -273,7 +272,6 @@ ul {
   color: #f4f4fd;
 }
 .footer-text {
-  padding-bottom: 100px;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
