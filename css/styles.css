@@ -534,7 +534,7 @@ img {
   margin-bottom: 0;
 }
 
-.portfolio-overlay:hover .card-hover-text {
+.portfolio-overlay:is(:hover, :focus) .card-hover-text {
   transform: translateY(0);
 }
 
