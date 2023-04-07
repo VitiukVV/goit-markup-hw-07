@@ -4,7 +4,10 @@
   --primary-color: #2e2f42;
   --text-color: #434455;
   --logo-web-color: #4d5ae5;
+  --btn-color: #4d5ae5;
   --hover-color: #404bbf;
+  --border-color: #e7e9fc;
+  --background-btn-color: #e7e9fc;
   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
@@ -71,7 +74,7 @@ img {
 /* ===================== /COMPONENTS ===================== */
 /* ===================== HEADER ===================== */
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--border-color);
 }
 .main-nav {
   display: flex;
@@ -204,7 +207,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background: #4d5ae5;
+  background: var(--btn-color);
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -346,7 +349,7 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   fill: #8e8f99;
-  transition: fil var(--main-transition), border-color var(--main-transition);
+  transition: fill var(--main-transition), border-color var(--main-transition);
 }
 
 .client-link:hover,
@@ -458,9 +461,19 @@ img {
   margin-left: auto;
   width: 24px;
   height: 24px;
-  background: #e7e9fc;
+  background: var(--border-color);
+  fill: var(--primary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--main-transition),
+    filter var(--main-transition), fill var(--main-transition);
+}
+
+.modal-close-btn:is(:hover, :focus) {
+  background-color: var(--hover-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  fill: #f4f4fd;
 }
 .is-hidden {
   opacity: 0;
@@ -494,9 +507,9 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-  color: #4d5ae5;
+  color: var(--btn-color);
   background: #f4f4fd;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   transition: background-color var(--main-transition),
     color var(--main-transition), box-shadow var(--main-transition);
@@ -549,7 +562,7 @@ img {
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--main-transition);
-  background-color: #4d5ae5;
+  background-color: var(--btn-color);
   color: #f4f4fd;
 }
 
@@ -558,7 +571,7 @@ img {
 }
 .card-content {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
   border-top: 0;
 }
 /* ===================== /portfolio page ===================== */
