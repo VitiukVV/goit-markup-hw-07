@@ -71,6 +71,30 @@ img {
   color: var(--text-color);
 }
 
+.buttons {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ===================== /COMPONENTS ===================== */
 /* ===================== HEADER ===================== */
 .page-header {
@@ -202,17 +226,10 @@ img {
 }
 .hero-btn {
   padding: 16px 32px;
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   background: var(--btn-color);
   color: #ffffff;
-  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
-  border-radius: 4px;
   transition: background-color var(--main-transition);
 }
 
@@ -406,6 +423,7 @@ img {
   display: flex;
   gap: 16px;
   justify-content: center;
+  margin-right: 80px;
 }
 
 .footer-social-networks-link {
@@ -426,6 +444,62 @@ img {
 .footer-link-icon {
   fill: currentColor;
 }
+
+.sub-form-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.sub-email-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.sub-email-input::placeholder {
+  color: #ffffff;
+}
+.sub-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  padding: 8px 24px;
+  gap: 16px;
+  border: transparent;
+  background: var(--btn-color);
+  transition: background-color var(--main-transition);
+}
+
+.sub-button:hover,
+.sub-button:focus {
+  background-color: var(--hover-color);
+}
+.sub-btn-title {
+  color: #ffffff;
+}
+.sub-icon-plane {
+  fill: #ffffff;
+}
+
 /* ===================== /footer ===================== */
 /*  ===================== modal =====================*/
 .backdrop {
@@ -491,14 +565,8 @@ img {
   margin-bottom: 16px;
 }
 
-.modal-form {
-}
-
 .form-field {
   margin-bottom: 8px;
-}
-
-label {
 }
 
 .label-name {
@@ -540,10 +608,9 @@ label {
 .comment {
   margin-bottom: 16px;
 }
-.comment-area {
-  display: block;
-}
+
 textarea {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -567,40 +634,54 @@ textarea::placeholder {
 
 .checkbox {
   margin-bottom: 24px;
+}
+
+.policy-text {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-.policy-text {
-  /* display: flex;
-  align-items: center; */
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-/* .policy-text::before {
-  content: '';
+
+.policy-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-} */
+  margin-right: 8px;
+  fill: transparent;
+  transition: background-color var(--main-transition),
+    fill var(--main-transition), border var(--main-transition),
+    border-color var(--main-transition);
+}
+
+.policy-check:checked + .policy-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.policy-check:focus + .policy-text span {
+  border-color: #404bbf;
+}
+.policy-link {
+  margin-left: 4px;
+}
+
 .modal-btn {
-  padding: 16px 65px;
+  width: 169px;
+  height: 56px;
   display: block;
   margin: 0 auto;
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   background: var(--btn-color);
   color: #ffffff;
-  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
-  border-radius: 4px;
   transition: background-color var(--main-transition);
 }
 
@@ -625,19 +706,12 @@ textarea::placeholder {
 }
 .portfolio-button {
   padding: 12px 24px;
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--btn-color);
   background: #f4f4fd;
   border: 1px solid var(--border-color);
-  border-radius: 4px;
   transition: background-color var(--main-transition),
     color var(--main-transition), box-shadow var(--main-transition);
 }
