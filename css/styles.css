@@ -41,41 +41,48 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  /* width: 100%; */
 }
 /* ===================== COMPONENTS ===================== */
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  /* max-width: 428px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 .section-title {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: calc(40 / 36);
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-color);
 }
 .title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--primary-color);
 }
 .paragraph {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 .buttons {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
@@ -88,7 +95,6 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -166,6 +172,26 @@ img {
   background: var(--hover-color);
   border-radius: 2px;
 }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  stroke: var(--primary-color);
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 .main-address {
   font-style: normal;
   margin-left: auto;
@@ -182,7 +208,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
   color: var(--text-color);
   transition: color var(--main-transition);
 }
@@ -194,34 +219,56 @@ img {
 /* ===================== /HEADER ===================== */
 /* ===================== HERO ===================== */
 .hero-section {
-  height: 600px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 432px;
+  /* min-width: 428px; */
+  /* max-width: 428px; */
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office.jpg);
+    url(../images/hero/people-office-mob.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-color: var(--primary-color);
   text-align: center;
+  padding: 112px 0;
 }
-
-.hero-container {
-  padding: 188px 0;
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-mob-2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-mob-3x.jpg);
+  }
 }
 .hero-title {
   margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
-
-  font-size: 56px;
-  line-height: 1.07;
+  margin-bottom: 72px;
+  max-width: 290px;
+  font-size: 32px;
+  line-height: calc(36 / 32);
   letter-spacing: 0.02em;
-
+  text-transform: capitalize;
   color: #ffffff;
 }
 .hero-btn {
@@ -229,7 +276,7 @@ img {
   background: var(--btn-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
+  border: none;
   transition: background-color var(--main-transition);
 }
 
@@ -240,53 +287,38 @@ img {
 /* ===================== /HERO ===================== */
 /* ===================== Section 2 our qualities */
 .section-qualities {
-  padding: 120px 0;
+  padding: 96px 0;
 }
-.qualities-list {
-  display: flex;
-}
+
 .list-item .title {
   margin-bottom: 8px;
 }
 .list-item {
-  width: 264px;
-}
-.qualities-list .list-item + .list-item {
-  margin-left: 24px;
+  flex-basis: 396px;
 }
 
 .qualities-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  margin-bottom: 8px;
-  background: #f4f4fd;
-  border-radius: 4px;
+  display: none;
 }
 
 /* ===================== /Section 2 our qualities =================== */
 /* ===================== Section 3 what are we doing ================*/
 .section-work {
-  padding-bottom: 120px;
-}
-.work-list {
-  display: flex;
-}
-.section-work .section-title {
-  margin-bottom: 72px;
-}
-.work-list .work-item + .work-item {
-  margin-left: 24px;
+  display: none;
 }
 /* ===================== /Section 3 what are we doing =============== */
 /* ===================== team section ===================== */
 .section-team {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: #f4f4fd;
 }
+
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-title {
@@ -299,20 +331,20 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item + .team-item {
-  margin-left: 24px;
-}
 
+.team-description {
+  padding: 32px 16px;
+  text-align: center;
+}
 .team-name {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
 }
 .team-prof {
   margin-bottom: 8px;
-}
-.team-description {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
+  font-weight: 400;
 }
 
 .social-networks {
@@ -343,25 +375,28 @@ img {
 /* ===================== /team section ===================== */
 /* ===================== Section 5 customers ===================== */
 .section-customers {
-  padding: 120px 0;
+  padding: 96px 0;
 }
+
 .section-customers .section-title {
   margin-bottom: 72px;
 }
 
-.client-list {
+.customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+  justify-content: center;
 }
-.client-item {
-  display: flex;
-  flex-basis: calc((100% - 24px) / 6);
+.customers-item {
+  /* display: flex; */
+  flex-basis: calc((100% - 16px) / 2);
 }
-.client-link {
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 100%;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -369,8 +404,8 @@ img {
   transition: fill var(--main-transition), border-color var(--main-transition);
 }
 
-.client-link:hover,
-.client-link:focus {
+.customers-link:hover,
+.customers-link:focus {
   fill: var(--hover-color);
   border-color: var(--hover-color);
 }
@@ -378,38 +413,42 @@ img {
 /* ===================== footer ===================== */
 .footer {
   background-color: var(--primary-color);
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-container {
-  display: flex;
+  text-align: center;
 }
 .footer-main-text {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 .footer-logo {
+  display: block;
   margin-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
+  line-height: calc(21 / 18);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--logo-web-color);
 }
 .footer-logo-web {
   color: #f4f4fd;
 }
 .footer-text {
-  width: 264px;
+  max-width: 268px;
+  margin: 0 auto;
+  text-align: start;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: #e7e9fc;
 }
+.footer-soc-networks {
+  margin-bottom: 72px;
+}
+
 .social-media-title {
   margin-bottom: 16px;
   font-family: var(--primary-font);
@@ -423,7 +462,6 @@ img {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-right: 80px;
 }
 
 .footer-social-networks-link {
@@ -454,13 +492,12 @@ img {
   color: #ffffff;
 }
 
-.footer-form {
-  display: flex;
-  gap: 24px;
+.footer-sub-form {
+  margin-bottom: 16px;
 }
 
 .sub-email-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -479,6 +516,7 @@ img {
 }
 .sub-button {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   width: 165px;

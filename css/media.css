@@ -1,0 +1,266 @@
+/* 428px, 768px і 1158px. */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* =========== Section 2 our qualities */
+  .list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  /* =====customers-section======= */
+  .customers-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* =====customers-section======= */
+  .customers-container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .footer-container {
+    padding-left: 108px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    text-align: start;
+  }
+}
+
+/* =============mobile============================================*/
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+  /* ======hero===== */
+  .hero-section {
+    /* height: 436px; */
+    /* max-width: 428px; */
+    min-width: 428px;
+    /* max-width: 768px; */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tab-2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tab-3x.jpg);
+    }
+  }
+  .hero-title {
+    max-width: 320px;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+  /* ============footer========= */
+  .sub-email-input {
+    max-width: 398px;
+  }
+}
+@media screen and (max-width: 1157px) {
+  /* =========== Section 2 our qualities */
+  .qualities-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* =============tablet================================================ */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /* ======hero===== */
+  .hero-section {
+    min-width: 768px;
+    /* max-width: 768px; */
+    height: 436px;
+    /* height: 600px; */
+    /* max-width: 1440px; */
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-3x.jpg);
+    }
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    text-transform: none;
+  }
+  /* =========== Section 2 our qualities */
+  .qualities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .title {
+    text-align: start;
+  }
+
+  /* ============ team section */
+  .team-list {
+    gap: 64px 24px;
+  }
+  .team-name {
+    text-align: center;
+  }
+  /* =====customers-section======= */
+  .customers-list {
+    column-gap: 24px;
+  }
+  .customers-item {
+    flex-basis: calc((100% - (24px * 2)) / 3);
+  }
+  /* ============footer========= */
+  .footer-container {
+    display: flex;
+    text-align: start;
+  }
+  .footer-main-text {
+    margin-bottom: 0;
+  }
+  .footer-soc-networks {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-sub-form {
+    margin-bottom: 0;
+  }
+  .sub-email-input {
+    width: 264px;
+  }
+}
+/* =============desktop============================================== */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  /* ======hero===== */
+  .hero-section {
+    height: 600px;
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  /* =========== Section 2 our qualities */
+  .section-qualities {
+    padding: 120px 0;
+  }
+  .list-item {
+    flex-basis: 264px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+  .paragraph {
+    font-weight: 400;
+  }
+  .qualities-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    border-radius: 4px;
+  }
+  /* =============Section 3 what are we doing */
+  .section-work {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .work-list {
+    display: flex;
+  }
+  .section-work .section-title {
+    margin-bottom: 72px;
+  }
+  .work-list .work-item + .work-item {
+    margin-left: 24px;
+  }
+  /* ============ team section */
+  .section-team {
+    padding: 120px 0;
+  }
+  /* =====customers-section======= */
+  .section-customers {
+    padding: 120px 0;
+  }
+  .customers-item {
+    flex-basis: calc((100% - (24px * 5)) / 6);
+  }
+  /* ============footer========= */
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-main-text {
+    margin-right: 120px;
+  }
+  .footer-social-networks {
+    margin-right: 80px;
+  }
+}
