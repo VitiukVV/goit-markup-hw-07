@@ -43,7 +43,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  /* width: 100%; */
 }
 /* ===================== COMPONENTS ===================== */
 .container {
@@ -105,6 +104,8 @@ img {
 /* ===================== HEADER ===================== */
 .page-header {
   border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .main-nav {
   display: flex;
@@ -116,7 +117,6 @@ img {
 }
 .logo {
   padding: 0px;
-
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -130,52 +130,14 @@ img {
   color: var(--primary-color);
 }
 
-.menu {
-  display: flex;
-  margin-left: 76px;
+.menu,
+.main-address {
+  display: none;
 }
 
-.menu .menu-item + .menu-item {
-  margin-left: 40px;
-}
-
-.menu-link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-color);
-  transition: color var(--main-transition);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--hover-color);
-}
-
-.current {
-  position: relative;
-  color: var(--hover-color);
-}
-
-.current::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: var(--hover-color);
-  border-radius: 2px;
-}
-
-.menu-button {
+.open-menu-button {
   display: inline-flex;
-  margin: 0;
+  margin: 24px 0 24px auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -192,30 +154,111 @@ img {
 .menu-button.is-open .icon-menu {
   display: none;
 }
-.main-address {
-  font-style: normal;
-  margin-left: auto;
-}
-.address-list {
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* z-index: 2; */
+  padding: 24px 24px 40px 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.close-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 32px;
+  width: 24px;
+  height: 24px;
+  background: var(--border-color);
+  fill: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--main-transition),
+    filter var(--main-transition), fill var(--main-transition);
 }
 
-.address-list .menu-item + .menu-item {
-  margin-left: 40px;
+.close-menu-button:is(:hover, :focus) {
+  background-color: var(--hover-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  fill: #f4f4fd;
+}
+.icon-close {
+}
+.mob-menu-list {
+}
+.mob-menu-item {
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.current-mob {
+  color: #404bbf;
 }
 
-.contacts {
-  font-size: 16px;
-  line-height: 1.5;
+.mob-main-address {
+  margin-bottom: 48px;
+}
+.mob-address-list {
+}
+.contacts-tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: calc(28 / 25);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.contacts-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--text-color);
-  transition: color var(--main-transition);
+}
+.mob-menu-social-networks {
+  display: flex;
+  /* gap: 16px; */
+  /* gap: 56px; */
+  justify-content: space-between;
 }
 
-.contacts:hover,
-.contacts:focus {
-  color: var(--hover-color);
+.mob-menu-social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--logo-web-color);
+  transition: background-color var(--main-transition);
 }
+
+.mob-menu-social-networks-link:hover,
+.mob-menu-social-networks-link:focus {
+  background-color: #31d0aa;
+}
+.mob-menu-link-icon {
+  fill: currentColor;
+}
+
 /* ===================== /HEADER ===================== */
 /* ===================== HERO ===================== */
 .hero-section {

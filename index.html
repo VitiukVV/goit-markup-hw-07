@@ -40,19 +40,6 @@
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="menu-button is-open js-menu-container"
-            aria-expanded="false"
-          >
-            <svg width="32" height="22" aria-label="swich modal menu">
-              <use
-                class="icon-close"
-                href="./images/icons.svg#icon-close"
-              ></use>
-              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
         </nav>
         <address class="main-address">
           <ul class="address-list list">
@@ -68,21 +55,132 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="open-menu-button is-open js-open-menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="icon-menu"
+            width="32"
+            height="22"
+            aria-label="swich modal menu"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu js-menu-container">
+        <div>
+          <button
+            type="button"
+            class="close-menu-button js-close-menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="icon-close"
+              width="8"
+              height="8"
+              aria-label="swich modal menu"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current-mob" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-main-address">
+            <ul class="mob-address-list list">
+              <li class="mob-menu-item">
+                <a class="contacts-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="contacts-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-menu-social-networks list">
+            <li class="mob-menu-social-networks-item">
+              <a
+                class="mob-menu-social-networks-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="icon-instagram"
+                ><svg class="mob-menu-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mob-menu-social-networks-item">
+              <a
+                class="mob-menu-social-networks-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="icon-twitter"
+                ><svg class="mob-menu-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mob-menu-social-networks-item">
+              <a
+                class="mob-menu-social-networks-link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="icon-facebook"
+                ><svg class="mob-menu-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mob-menu-social-networks-item">
+              <a
+                class="mob-menu-social-networks-link link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="icon-linkedin"
+                ><svg class="mob-menu-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main content ------------------------------------------------>
     <main>
       <!-- ==========================section 1 Hero image ====================-->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn buttons" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- ==========================Section 2 our qualities ============ -->
-      <section class="section-qualities">
+      <!-- <section class="section-qualities">
         <div class="qualities-container container">
           <h2 class="section-title" hidden>our qualities</h2>
           <ul class="qualities-list list">
@@ -136,14 +234,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ============================Section 3 what are we doing=======================-->
-      <section class="section-work">
+      <!-- <section class="section-work">
         <div class="container work-container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="work-list list">
             <li class="work-item">
               <img
+                srcset="
+                  ./images/our-work/img-1-2x.jpg 2x,
+                  ./images/our-work/img-1-3x.jpg 3x
+                "
                 src="./images/our-work/img-1.jpg"
                 width="360"
                 height="300"
@@ -152,6 +254,10 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/our-work/img-2-2x.jpg 2x,
+                  ./images/our-work/img-2-3x.jpg 3x
+                "
                 src="./images/our-work/img-2.jpg"
                 width="360"
                 height="300"
@@ -160,6 +266,10 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/our-work/img-3-2x.jpg 2x,
+                  ./images/our-work/img-3-3x.jpg 3x
+                "
                 src="./images/our-work/img-3.jpg"
                 width="360"
                 height="300"
@@ -168,14 +278,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ===========================Section 4 our team =====================-->
-      <section class="section-team">
+      <!-- <section class="section-team">
         <div class="team-container container">
           <h2 class="section-title team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/Mark-2x.jpg 2x,
+                  ./images/our-team/Mark-3x.jpg 3x
+                "
                 class="team-img"
                 src="./images/our-team/Mark.jpg"
                 alt="Mark Guerrero Product Designer"
@@ -237,6 +351,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/Tom-2x.jpg 2x,
+                  ./images/our-team/Tom-3x.jpg 3x
+                "
                 class="team-img"
                 src="./images/our-team/Tom.jpg"
                 alt="Tom Ford Frontend Developer"
@@ -298,6 +416,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/Camila-2x.jpg 2x,
+                  ./images/our-team/Camila-3x.jpg 3x
+                "
                 class="team-img"
                 src="./images/our-team/Camila.jpg"
                 alt="Camila Garcia Marketing"
@@ -359,6 +481,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/Daniel-2x.jpg 2x,
+                  ./images/our-team/Daniel-3x.jpg 3x
+                "
                 class="team-img"
                 src="./images/our-team/Daniel.jpg"
                 alt="Daniel Wilson UI Designer"
@@ -420,9 +546,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- =========================Section 5 customers=====================-->
-      <section class="section-customers">
+      <!-- <section class="section-customers">
         <div class="customers-container container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
@@ -470,10 +596,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- ======================================footer =================-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-main-text">
           <a class="footer-logo link" href="./index.html"
@@ -557,7 +683,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- =====================================modal================== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
