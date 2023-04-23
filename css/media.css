@@ -10,6 +10,9 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .portfolio-list {
+    width: 363px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -21,6 +24,14 @@
     width: 584px;
     flex-wrap: wrap;
     gap: 72px 24px;
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  /* =========== Section 2 our qualities */
+  .qualities-container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -82,12 +93,9 @@
   .sub-email-input {
     max-width: 398px;
   }
-}
-@media screen and (max-width: 1157px) {
-  /* =========== Section 2 our qualities */
-  .qualities-container {
-    padding-left: 16px;
-    padding-right: 16px;
+  /* ==========modal======== */
+  .modal {
+    width: 392px;
   }
 }
 
@@ -97,6 +105,9 @@
     max-width: 768px;
   }
   /* =======header======= */
+  .open-menu-button {
+    display: none;
+  }
   .menu {
     display: flex;
     margin-left: 76px;
@@ -110,7 +121,6 @@
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -140,22 +150,21 @@
     border-radius: 2px;
   }
   .main-address {
-    display: block;
+    display: flex;
     font-style: normal;
     margin-left: auto;
   }
-  .address-list {
-    display: flex;
-  }
 
   .address-list .menu-item + .menu-item {
-    margin-left: 40px;
+    margin-top: 12px;
   }
 
   .contacts {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
     color: var(--text-color);
     transition: color var(--main-transition);
   }
@@ -257,11 +266,43 @@
   .sub-email-input {
     width: 264px;
   }
+  /* ==========modal======== */
+  .modal {
+    width: 408px;
+    padding: 24px;
+  }
+  /* ========portfolio======= */
+  .section-portfolio {
+    padding: 64px 0;
+  }
+  .portfolio-list {
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+
+  .portfolio-button {
+    padding: 12px 24px;
+  }
 }
 /* =============desktop============================================== */
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  /* =======header====== */
+  .address-list {
+    display: flex;
+  }
+
+  .address-list .menu-item + .menu-item {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+
+  .contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   /* ======hero===== */
   .hero-section {
@@ -330,5 +371,10 @@
   }
   .footer-social-networks {
     margin-right: 80px;
+  }
+  /* ========portfolio======= */
+  .section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
   }
 }

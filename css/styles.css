@@ -46,8 +46,6 @@ img {
 }
 /* ===================== COMPONENTS ===================== */
 .container {
-  /* width: 1158px; */
-  /* max-width: 428px; */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -116,7 +114,7 @@ img {
   align-items: center;
 }
 .logo {
-  padding: 0px;
+  padding: 24px 0;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -137,28 +135,14 @@ img {
 
 .open-menu-button {
   display: inline-flex;
-  margin: 24px 0 24px auto;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
   stroke: var(--primary-color);
+  cursor: pointer;
 }
 
-.menu-button .icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-.is-open {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
 .no-scroll {
   overflow: hidden;
 }
@@ -166,17 +150,18 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* z-index: 2; */
   padding: 24px 24px 40px 40px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .close-menu-button {
   display: flex;
   justify-content: center;
@@ -185,9 +170,9 @@ img {
   margin-bottom: 32px;
   width: 24px;
   height: 24px;
-  background: var(--border-color);
+  background-color: var(--border-color);
   fill: var(--primary-color);
-  border: 1px solid rgba(46, 47, 66, 1);
+  border: 1px solid rgba(46, 47, 66, 0.1);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color var(--main-transition),
@@ -199,12 +184,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   fill: #f4f4fd;
 }
-.icon-close {
-}
-.mob-menu-list {
-}
-.mob-menu-item {
-}
+
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -223,8 +203,7 @@ img {
 .mob-main-address {
   margin-bottom: 48px;
 }
-.mob-address-list {
-}
+
 .contacts-tel {
   font-style: normal;
   font-weight: 700;
@@ -243,8 +222,7 @@ img {
 }
 .mob-menu-social-networks {
   display: flex;
-  /* gap: 16px; */
-  /* gap: 56px; */
+  max-width: 328px;
   justify-content: space-between;
 }
 
@@ -271,8 +249,6 @@ img {
 /* ===================== HERO ===================== */
 .hero-section {
   height: 432px;
-  /* min-width: 428px; */
-  /* max-width: 428px; */
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
@@ -369,7 +345,6 @@ img {
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
-  align-items: center;
 }
 
 .team-title {
@@ -606,13 +581,13 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform var(--main-transition);
-  width: 408px;
-  height: 584px;
+  min-width: 290px;
+  height: 586px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 24px 16px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-180deg);
@@ -781,21 +756,20 @@ textarea::placeholder {
 /*  ===================== /modal =====================*/
 /* ===================== portfolio page ===================== */
 .section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px 0;
 }
 
 .portfolio-list {
   display: flex;
-  margin-bottom: 72px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+
+  margin-bottom: 48px;
+  justify-content: start;
 }
 
-.portfolio-list-item + .portfolio-list-item {
-  margin-left: 24px;
-}
 .portfolio-button {
-  padding: 12px 24px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   text-align: center;
