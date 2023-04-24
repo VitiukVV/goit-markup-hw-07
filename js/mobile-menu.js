@@ -1,7 +1,7 @@
 // Шукаємо елементи в html розмітці
-const mobileMenu = document.querySelector('[js-menu-container]');
-const openMenuBtn = document.querySelector('[js-open-menu]');
-const closeMenuBtn = document.querySelector('[js-close-menu]');
+const mobileMenu = document.querySelector('[data-menu-container]');
+const openMenuBtn = document.querySelector('[data-open-menu]');
+const closeMenuBtn = document.querySelector('[data-close-menu]');
 const vitiuk = document.querySelector('body');
 // Кінець 1 блоку
 
