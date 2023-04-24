@@ -10,8 +10,12 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  /* =====portfolio======= */
   .portfolio-list {
     width: 363px;
+  }
+  .card-item {
+    margin-bottom: 48px;
   }
 }
 
@@ -283,6 +287,14 @@
   .portfolio-button {
     padding: 12px 24px;
   }
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .card-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 /* =============desktop============================================== */
 @media screen and (min-width: 1158px) {
@@ -374,7 +386,13 @@
   }
   /* ========portfolio======= */
   .section-portfolio {
-    padding-top: 96px;
+    padding-top: 100px;
     padding-bottom: 120px;
+  }
+  .portfolio-list {
+    margin-bottom: 72px;
+  }
+  .card-item {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
