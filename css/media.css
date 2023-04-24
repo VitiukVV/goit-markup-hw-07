@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* 428px, 768px і 1158px. */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -26,6 +33,7 @@
   }
   .footer-container {
     width: 584px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
@@ -55,6 +63,20 @@
   /* ======hero===== */
   .hero-section {
     min-width: 428px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/hero/people-office-tab.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-tab.jpg);
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -64,9 +86,24 @@
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero/people-office-tab-2x.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tab-2x.jpg);
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -77,9 +114,24 @@
   }
   @media (min-device-pixel-ratio: 3),
     (-webkit-min-device-pixel-ratio: 3),
+    (-o-min-device-pixel-ratio: 3/1),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     .hero-section {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero/people-office-tab-3x.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tab-3x.jpg);
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -113,6 +165,8 @@
     display: none;
   }
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 76px;
   }
@@ -130,6 +184,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-color);
+    -webkit-transition: color var(--main-transition);
+    -o-transition: color var(--main-transition);
     transition: color var(--main-transition);
   }
 
@@ -154,6 +210,8 @@
     border-radius: 2px;
   }
   .main-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-style: normal;
     margin-left: auto;
@@ -170,6 +228,8 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.04em;
     color: var(--text-color);
+    -webkit-transition: color var(--main-transition);
+    -o-transition: color var(--main-transition);
     transition: color var(--main-transition);
   }
 
@@ -181,6 +241,20 @@
   .hero-section {
     min-width: 768px;
     height: 436px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/hero/people-office.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -190,9 +264,24 @@
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero/people-office-2x.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-2x.jpg);
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -203,9 +292,24 @@
   }
   @media (min-device-pixel-ratio: 3),
     (-webkit-min-device-pixel-ratio: 3),
+    (-o-min-device-pixel-ratio: 3/1),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     .hero-section {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(46, 47, 66, 0.7)),
+          to(rgba(46, 47, 66, 0.7))
+        ),
+        url(../images/hero/people-office-3x.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-3x.jpg);
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -223,11 +327,15 @@
   }
   /* =========== Section 2 our qualities */
   .qualities-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
   .list-item {
+    -ms-flex-preferred-size: calc((100% - 24px) / 2);
     flex-basis: calc((100% - 24px) / 2);
   }
   .title {
@@ -243,13 +351,18 @@
   }
   /* =====customers-section======= */
   .customers-list {
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
     column-gap: 24px;
   }
   .customers-item {
+    -ms-flex-preferred-size: calc((100% - (24px * 2)) / 3);
     flex-basis: calc((100% - (24px * 2)) / 3);
   }
   /* ============footer========= */
   .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: start;
   }
@@ -261,6 +374,8 @@
   }
 
   .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
   }
@@ -281,6 +396,8 @@
   }
   .portfolio-list {
     margin-bottom: 64px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -288,11 +405,15 @@
     padding: 12px 24px;
   }
   .card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
   .card-item {
+    -ms-flex-preferred-size: calc((100% - 24px) / 2);
     flex-basis: calc((100% - 24px) / 2);
   }
 }
@@ -303,6 +424,8 @@
   }
   /* =======header====== */
   .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -330,6 +453,7 @@
     padding: 120px 0;
   }
   .list-item {
+    -ms-flex-preferred-size: 264px;
     flex-basis: 264px;
   }
   .title {
@@ -341,8 +465,14 @@
     font-weight: 400;
   }
   .qualities-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 112px;
     margin-bottom: 8px;
@@ -355,6 +485,8 @@
     padding-bottom: 120px;
   }
   .work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .section-work .section-title {
@@ -372,6 +504,7 @@
     padding: 120px 0;
   }
   .customers-item {
+    -ms-flex-preferred-size: calc((100% - (24px * 5)) / 6);
     flex-basis: calc((100% - (24px * 5)) / 6);
   }
   /* ============footer========= */
@@ -393,6 +526,7 @@
     margin-bottom: 72px;
   }
   .card-item {
+    -ms-flex-preferred-size: calc((100% - 48px) / 3);
     flex-basis: calc((100% - 48px) / 3);
   }
 }
